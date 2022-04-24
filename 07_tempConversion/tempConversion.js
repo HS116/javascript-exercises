@@ -3,11 +3,11 @@ const ftoc = function(temp) {
 };
 
 const ctof = function(temp) {
-  return round1dp(9/5 * temp + 32);
+  return round1dp(temp * 9/5 + 32);
 };
 
 function round1dp(num){
-  return (Math.round(num * 10)) / 10;
+  return Math.round(num * 10) / 10;
 }
 
 // Do not edit below this line
